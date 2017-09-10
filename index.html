@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<meta name="keywords" content="小白扮大神的个人站点">
+    	<meta name="author" content="小白扮大神">
+    	<meta name="description" content="Beginners try for html。">
+		<title>测试页面</title>
+		<style type="text/css">
+			body {
+				margin: 0 auto;
+				background-color: #D4D4D4;
+			}
+			.nav {
+				width: 100%;
+				height: 50px;
+				background-color: white;
+				box-shadow: 0 1px 1px grey;
+				position: fixed;
+			}
+			.nav ul {
+				width: 980px;
+				height: 50px;
+				margin: 0 auto;
+				padding: 0;
+				list-style:none;/*去掉小黑点*/
+			}
+			.nav ul li {
+				width: 5em;
+				text-align: center;
+				position:relative;
+				float: left;
+			}
+			.nav ul li a {
+				line-height: 50px;
+				text-decoration: none;/*去掉下划线*/
+				color: grey;
+				display: block;
+			}
+			.nav ul li a:hover {
+				color: black;
+			}
+			.nav ul li a span {
+				font-size: 30px;
+			}
+			.nav ul li ul {
+				position:absolute;
+				display:none;/*默认状态下或鼠标离开时隐藏*/
+			}
+			.nav ul li ul li {
+				height: 35px;
+				border-radius: 5px;
+				float: none;/*取消横向排布*/
+				background-color: rgba(247,247,247,0.8);
+			}
+			.nav ul li ul li a {
+				line-height: 35px;
+			}
+			/*鼠标滑过一级菜单的元素时显示下拉菜单*/
+			.nav ul li:hover ul {
+				display:block;
+			}
+			.container {
+				padding: 0 15px;
+				margin: 0 auto 20px;
+			}
+			.dinglan {
+				padding-top: 70px;
+			}
+			.navbar {
+				padding: 10px;
+				background-color: white;
+				border:1px solid grey;
+				border-radius: 5px;
+			}
+			.end p {
+				text-align: center;
+			}
+			.end a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class="nav">
+				<ul>
+					<li><a href="#home"><span>龙碁</span></a></li>
+					<li><a href="index0.html">首页</a></li>
+					<li><a href="#">特点</a>
+						<ul>
+							<li><a href="#">特点1</a></li>
+							<li><a href="#">特点2</a></li>
+							<li><a href="#">特点3</a></li>
+						</ul>
+					</li>
+					<li><a href="">联系</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="dinglan">
+			<div class="container">
+				<div class="navbar">
+					<p>First</p>
+					This is a html for a simple marketing.Use it as a starting point to create something.
+				</div>
+			</div>
+		</div>
+		<div style="height: 600px;"></div>
+		<footer class="end">
+			<p>
+			<small>Copyright &copy; 2017 <a href="http://www.slong7.cn/">龙碁网</a> All Rights Reserved | 小白扮大神</small>
+			</p>
+		</footer>
+	</body>
+</html>
